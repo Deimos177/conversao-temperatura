@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod-blue
+  labels:
+    cor: blue
+spec:
+  containers:
+    - name: site
+      image: fabricioveronez/web-page:blue
+      ports:
+      - containerPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod-green
+  labels:
+    cor: green
+spec:
+  containers:
+    - name: site
+      image: fabricioveronez/web-page:blue
+      ports:
+      - containerPort: 80
